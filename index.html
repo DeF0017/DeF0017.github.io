@@ -54,11 +54,12 @@
 		  
 <tr onmouseover="gif_start('gif_image1')" onmouseout="gif_stop('gif_image1')">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one" style="position: relative;">
-      <div class="two" id="gif_image1" style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
-        <img src="images/medical_caption_typing_large.gif" width="100%">
+    <div class="one" style="position: relative; width: 100%; height: 200px;">
+      <!-- GIF overlaid on static image -->
+      <div class="two" id="gif_image1" style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 0.3s;">
+        <img src="images/medical_caption_typing_large.gif" style="width:100%; height:100%; object-fit:cover;">
       </div>
-      <img src="images/mic.png" width="100%">
+      <img src="images/mic.png" style="width:100%; height:100%; object-fit:cover;">
     </div>
   </td>
 
