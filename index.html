@@ -28,7 +28,7 @@
 		I am currently exploring opportunities to pursue graduate studies and research in Computer Vision and Multimodal Learning.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:drakegandhi007@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:dbg.deepgandhi@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
                   <a href="https://x.com/Deep_Gandhi007">Twitter</a> &nbsp;/&nbsp;
@@ -52,9 +52,24 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr>
+            <tr onmouseout="gif_stop()" onmouseover="gif_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src="images/cyclegan_transition_clean.gif" alt="CycleGAN Style Transfer" width="160" height="160">
+    <div class="one">
+      <div class="two" id='gif_image'>
+        <img src='images/cyclegan_transition_clean.gif' width=100%>
+      </div>
+      <img src='images/cyclegan_static.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function gif_start() {
+        document.getElementById('gif_image').style.opacity = "1";
+      }
+
+      function gif_stop() {
+        document.getElementById('gif_image').style.opacity = "0";
+      }
+      gif_stop()
+    </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
     <a href="https://github.com/DeF0017/Style-Transfer-using-CycleGAN">
@@ -68,6 +83,7 @@
     </p>
   </td>
 </tr>
+
 
 
           </tbody></table>
