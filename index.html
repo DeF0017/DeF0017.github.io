@@ -54,11 +54,12 @@
 
             <tr onmouseout="gif_stop()" onmouseover="gif_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='gif_image'>
-        <img src='images/739_o.png' width=100%>
+    <div class="one" style="position: relative;">
+      <!-- GIF overlaid on static image -->
+      <div class="two" id='gif_image' style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
+        <img src='images/739_o.png' width="100%">
       </div>
-      <img src='images/739.jpg' width=100%>
+      <img src='images/739.jpg' width="100%">
     </div>
     <script type="text/javascript">
       function gif_start() {
@@ -68,13 +69,17 @@
       function gif_stop() {
         document.getElementById('gif_image').style.opacity = "0";
       }
-      gif_stop()
+
+      gif_stop();
     </script>
   </td>
+
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <h3>Style Transfer using CycleGAN</h3>
-    <br>
-    <a href="https://github.com/DeF0017/Style-Transfer-using-CycleGAN">Code</a> | <a href="https://huggingface.co/spaces/DeF0017/Style-Transfer-using-CycleGAN">Demo</a>
+    <h2 style="margin-bottom: 4px;">Style Transfer using CycleGAN</h2>
+    <div style="margin-bottom: 8px;">
+      <a href="https://github.com/DeF0017/Style-Transfer-using-CycleGAN">Code</a> |
+      <a href="https://huggingface.co/spaces/DeF0017/Style-Transfer-using-CycleGAN">Demo</a>
+    </div>
     <strong>Deep Gandhi</strong>
     <br>
     <p>
@@ -82,6 +87,7 @@
     </p>
   </td>
 </tr>
+
 
 
 
