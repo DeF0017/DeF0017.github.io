@@ -52,26 +52,14 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		  
-<tr onmouseout="gif1_stop()" onmouseover="gif1_start()">
+<tr onmouseover="gif_start('gif_image1')" onmouseout="gif_stop('gif_image1')">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one" style="position: relative;">
-      <!-- GIF overlaid on static image -->
-      <div class="two" id='gif_image' style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
-        <img src='images/739_o.png' width="100%">
+      <div class="two" id="gif_image1" style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
+        <img src="images/1.png" width="100%">
       </div>
-      <img src='images/mic.png' width="100%">
+      <img src="images/mic.png" width="100%">
     </div>
-    <script type="text/javascript">
-      function gif_start() {
-        document.getElementById('gif_image').style.opacity = "1";
-      }
-
-      function gif_stop() {
-        document.getElementById('gif_image').style.opacity = "0";
-      }
-
-      gif_stop();
-    </script>
   </td>
 
   <td style="padding:8px;width:80%;vertical-align:middle">
@@ -82,31 +70,19 @@
     <strong>Deep Gandhi</strong>
     <br>
     <p>
-      This project introduces a transformer-based medical image captioning pipeline incorporating BLIP-2, ViT+GPT-2, GIT and custom two-stage fine-tuning techniques using MeSH and DINOv2. The framework demonstrates strong performance in low-data settings and is evaluated using BLEU and ROUGE to ensure clinical and linguistic quality.
+      This project introduces a transformer-based medical image captioning pipeline incorporating BLIP-2, ViT+GPT-2, GIT and custom two-stage fine-tuning techniques using MeSH and DINOv2. The framework demonstrates versatility in low-data medical settings and is evaluated using BLEU and ROUGE for clinical and linguistic quality.
     </p>
   </td>
 </tr>
 
-            <tr onmouseout="gif_stop()" onmouseover="gif_start()">
+           <tr onmouseover="gif_start('gif_image2')" onmouseout="gif_stop('gif_image2')">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one" style="position: relative;">
-      <!-- GIF overlaid on static image -->
-      <div class="two" id='gif_image' style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
-        <img src='images/739_o.png' width="100%">
+      <div class="two" id="gif_image2" style="position:absolute;top:0;left:0;width:100%;opacity:0;transition:opacity 0.3s;">
+        <img src="images/739_o.png" width="100%">
       </div>
-      <img src='images/739.jpg' width="100%">
+      <img src="images/739.jpg" width="100%">
     </div>
-    <script type="text/javascript">
-      function gif_start() {
-        document.getElementById('gif_image').style.opacity = "1";
-      }
-
-      function gif_stop() {
-        document.getElementById('gif_image').style.opacity = "0";
-      }
-
-      gif_stop();
-    </script>
   </td>
 
   <td style="padding:8px;width:80%;vertical-align:middle">
